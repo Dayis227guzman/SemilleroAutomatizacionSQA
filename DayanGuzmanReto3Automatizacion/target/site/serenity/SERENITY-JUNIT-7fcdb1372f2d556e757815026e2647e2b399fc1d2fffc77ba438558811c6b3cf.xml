@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="CreateUser Sucessfuly" skipped="0" tests="1" time="2.6" timestamp="2022-02-24 09:44:29"><testcase name="Create user Sucessfuly"><failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError">1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+</failure><system-err>1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+&#13;
+io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:656)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:125)&#13;
+io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:133)&#13;
+io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)&#13;
+io.swagger.petstore.testing.stepdefinitions.CreateUserStepDefinition.iValidateTheStatusCode(CreateUserStepDefinition.java:31)&#13;
+✽.I validate the status code 200(src/test/resources/io.swagger.petstore.testing.feature/CreateUser.feature:10)&#13;
+</system-err></testcase></testsuite>

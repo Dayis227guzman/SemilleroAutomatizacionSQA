@@ -1,0 +1,34 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+
+    // https://mvnrepository.com/artifact/junit/junit
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+// Para configurar propiedades del comando de ejecucion de pruebas con Gradle
+test {
+//Ignorar los fallos es ejecutar todas las pruebas asi alguna falle
+    ignoreFailures = true
+}
+// Configurar el encoding del proyecto
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+// Continue asi falle alguna tarea de Gradle
+gradle.startParameter.continueOnFailure = true
